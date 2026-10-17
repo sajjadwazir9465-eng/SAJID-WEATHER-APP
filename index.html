@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Weather App</title>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+      <link rel="stylesheet" href="style.css">
+   </head>
+<body>
+    <div class="maincard">
+        <h1>Weather App</h1>
+
+        <input type="text" id="cityInput" name="city"  placeholder="Enter your city" autocomplete="off">
+
+        <button id="searchBtn"> Search</button>
+
+
+         <div id="loadingOverlay">
+
+            <div class="spinner"></div>
+              
+            <p id="loadingText">
+               Getting live weather...
+            </p>
+
+         </div>
+          
+         <p id="errorMessage" class="error-message"></p>
+
+         <div id="placeholder">
+
+            <h2>🌎</h2>
+            <p>Search any city to see live weather.</p>
+
+         </div>
+ 
+         <div id="resultParagraph">
+
+            <!-- <div id="placeholder">
+               <h2>🌎</h2>
+               <p>Search any city to see live weather.</p>
+            </div> -->
+
+            <div id="weatherIcon">
+
+               <img id="weatherIconImg" src="" alt=" Current Weather Icon">
+               
+            </div>
+
+            <p>
+               <strong>City:</strong>
+               <span id="cityName"></span>
+
+            </p>
+
+            <p>
+               <strong>Time Zone:</strong>
+               <span id="timeZone"></span>
+            </p>
+
+            <p>
+               <strong>Temperature:</strong>
+               <span id="temperature"></span>
+
+            </p>
+
+            <p>
+               <strong>Weather:</strong>
+               <span id="weather"></span>
+
+            </p>
+
+            <p>
+               <strong>Humidity:</strong>
+               <span id="humidity"></span>
+
+            </p>
+
+            <p>
+               <strong>Wind Speed:</strong>
+               <span id="windSpeed"></span>
+
+            </p>
+          
+         </div>
+
+      </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
